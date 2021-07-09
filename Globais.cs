@@ -10,6 +10,6 @@ namespace Ale_Academia
     {
         public static string versao = "1.0";
         public static Boolean logado = false;
-        public static int nivel = 0;
+        public static int nivel = 0; //0 = básico   1 = gerente   2 = master
     }
 }

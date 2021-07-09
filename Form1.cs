@@ -50,8 +50,78 @@ namespace Ale_Academia
             lb_acesso.Text = "0";
             lb_nomeusuario.Text = "---";
             pb_ledLogado.Image = Properties.Resources.botão_off;
-            Globais.nivel = 0;
+            Globais.nivel = 0; 
             Globais.logado = false;
+        }
+
+        private void manutençãoBancoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(Globais.logado == true)
+            {
+                if(Globais.nivel >= 2)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso negado!\nVocê não possui permição para acessar este recurso.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado.");
+            }
+        }
+
+        private void novoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel >= 1)
+                {
+                    F_NovoUsuario f_novousuario = new F_NovoUsuario();
+                    f_novousuario.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Acesso negado!\nVocê não possui permição para acessar este recurso.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado.");
+            }
+        }
+
+        private void gestãoDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel >= 1)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso negado!\nVocê não possui permição para acessar este recurso.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado.");
+            }
+        }
+
+        private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+                // PROCEDIMENTOS
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado.");
+            }
         }
     }
 }

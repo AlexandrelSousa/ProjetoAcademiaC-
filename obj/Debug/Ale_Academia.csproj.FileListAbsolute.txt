@@ -18,3 +18,4 @@ C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.csproj.
 C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.exe
 C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.pdb
 C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.F_Login.resources
+C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.F_NovoUsuario.resources

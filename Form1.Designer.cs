@@ -39,6 +39,13 @@ namespace Ale_Academia
             this.logarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manutençãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manutençãoBancoDeDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestãoDeUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_ledLogado)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -98,9 +105,9 @@ namespace Ale_Academia
             // pb_ledLogado
             // 
             this.pb_ledLogado.Image = global::Ale_Academia.Properties.Resources.botão_off;
-            this.pb_ledLogado.Location = new System.Drawing.Point(3, 3);
+            this.pb_ledLogado.Location = new System.Drawing.Point(13, 10);
             this.pb_ledLogado.Name = "pb_ledLogado";
-            this.pb_ledLogado.Size = new System.Drawing.Size(30, 30);
+            this.pb_ledLogado.Size = new System.Drawing.Size(20, 20);
             this.pb_ledLogado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_ledLogado.TabIndex = 1;
             this.pb_ledLogado.TabStop = false;
@@ -109,6 +116,9 @@ namespace Ale_Academia
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alunosToolStripMenuItem,
+            this.usuáriosToolStripMenuItem,
+            this.manutençãoToolStripMenuItem,
             this.logarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -139,6 +149,59 @@ namespace Ale_Academia
             this.logoffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logoffToolStripMenuItem.Text = "Logoff";
             this.logoffToolStripMenuItem.Click += new System.EventHandler(this.logoffToolStripMenuItem_Click);
+            // 
+            // manutençãoToolStripMenuItem
+            // 
+            this.manutençãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manutençãoBancoDeDadosToolStripMenuItem});
+            this.manutençãoToolStripMenuItem.Name = "manutençãoToolStripMenuItem";
+            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.manutençãoToolStripMenuItem.Text = "Manutenção";
+            // 
+            // manutençãoBancoDeDadosToolStripMenuItem
+            // 
+            this.manutençãoBancoDeDadosToolStripMenuItem.Name = "manutençãoBancoDeDadosToolStripMenuItem";
+            this.manutençãoBancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manutençãoBancoDeDadosToolStripMenuItem.Text = "Banco de Dados";
+            this.manutençãoBancoDeDadosToolStripMenuItem.Click += new System.EventHandler(this.manutençãoBancoDeDadosToolStripMenuItem_Click);
+            // 
+            // usuáriosToolStripMenuItem
+            // 
+            this.usuáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoUsuárioToolStripMenuItem,
+            this.gestãoDeUsuáriosToolStripMenuItem});
+            this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.usuáriosToolStripMenuItem.Text = "Usuários";
+            // 
+            // gestãoDeUsuáriosToolStripMenuItem
+            // 
+            this.gestãoDeUsuáriosToolStripMenuItem.Name = "gestãoDeUsuáriosToolStripMenuItem";
+            this.gestãoDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestãoDeUsuáriosToolStripMenuItem.Text = "Gestão de usuários";
+            this.gestãoDeUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.gestãoDeUsuáriosToolStripMenuItem_Click);
+            // 
+            // novoUsuárioToolStripMenuItem
+            // 
+            this.novoUsuárioToolStripMenuItem.Name = "novoUsuárioToolStripMenuItem";
+            this.novoUsuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoUsuárioToolStripMenuItem.Text = "Novo usuário";
+            this.novoUsuárioToolStripMenuItem.Click += new System.EventHandler(this.novoUsuárioToolStripMenuItem_Click);
+            // 
+            // alunosToolStripMenuItem
+            // 
+            this.alunosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoAlunoToolStripMenuItem});
+            this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
+            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.alunosToolStripMenuItem.Text = "Alunos";
+            // 
+            // novoAlunoToolStripMenuItem
+            // 
+            this.novoAlunoToolStripMenuItem.Name = "novoAlunoToolStripMenuItem";
+            this.novoAlunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoAlunoToolStripMenuItem.Text = "Novo Aluno";
+            this.novoAlunoToolStripMenuItem.Click += new System.EventHandler(this.novoAlunoToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -174,6 +237,13 @@ namespace Ale_Academia
         private System.Windows.Forms.ToolStripMenuItem logarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoffToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manutençãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manutençãoBancoDeDadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoAlunoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestãoDeUsuáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoUsuárioToolStripMenuItem;
     }
 }
 
