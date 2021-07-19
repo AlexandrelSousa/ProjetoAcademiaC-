@@ -99,7 +99,8 @@ namespace Ale_Academia
             {
                 if (Globais.nivel >= 1)
                 {
-
+                    F_Gestao f_gestao = new F_Gestao();
+                    f_gestao.ShowDialog();
                 }
                 else
                 {

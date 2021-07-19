@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\obj\\Debug",
+    "\\obj\\Release",
+    "\\packages\\EntityFramework.6.4.4",
+    "\\packages\\EntityFramework.6.4.4\\build"
   ],
+  "SelectedNode": "\\Ale_Academia.sln",
   "PreviewInSolutionExplorer": false
 }
