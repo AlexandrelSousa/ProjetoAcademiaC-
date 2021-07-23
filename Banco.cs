@@ -15,7 +15,7 @@ namespace Ale_Academia
 
         private static SQLiteConnection conexaoBanco()
         {
-            conexao = new SQLiteConnection("data source = C:\\Users\\Alexandre\\Documents\\CODE\\C#\\Ale_Academia\\banco\\banco_academia.db");
+            conexao = new SQLiteConnection("data source =" + Globais.caminhoBanco + Globais.nomeBanco);
 
             conexao.Open();
 
