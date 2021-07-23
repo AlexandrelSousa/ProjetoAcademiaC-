@@ -20,3 +20,4 @@ C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.pdb
 C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.F_Login.resources
 C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.F_NovoUsuario.resources
 C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.F_Gestao.resources
+C:\Users\Alexandre\Documents\CODE\C#\Ale_Academia\obj\Debug\Ale_Academia.F_Horarios.resources

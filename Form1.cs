@@ -19,6 +19,24 @@ namespace Ale_Academia
             f_Login.ShowDialog();
         }
 
+        private void abreForm(int nivel, Form f)
+        {
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel >= nivel)
+                {
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Acesso negado!\nVocê não possui permição para acessar este recurso.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado.");
+            }
+        }
         private void pb_ledLogado_Click(object sender, EventArgs e)
         {
 
@@ -75,42 +93,14 @@ namespace Ale_Academia
 
         private void novoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado == true)
-            {
-                if (Globais.nivel >= 1)
-                {
-                    F_NovoUsuario f_novousuario = new F_NovoUsuario();
-                    f_novousuario.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Acesso negado!\nVocê não possui permição para acessar este recurso.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("É necessário ter um usuário logado.");
-            }
+            F_NovoUsuario f_novousuario = new F_NovoUsuario();
+            abreForm(1, f_novousuario);
         }
 
         private void gestãoDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado == true)
-            {
-                if (Globais.nivel >= 1)
-                {
-                    F_Gestao f_gestao = new F_Gestao();
-                    f_gestao.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Acesso negado!\nVocê não possui permição para acessar este recurso.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("É necessário ter um usuário logado.");
-            }
+            F_Gestao f_gestao = new F_Gestao();
+            abreForm(1, f_gestao);
         }
 
         private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -123,6 +113,13 @@ namespace Ale_Academia
             {
                 MessageBox.Show("É necessário ter um usuário logado.");
             }
+        }
+
+        private void horáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Horarios f_horarios = new F_Horarios();
+            abreForm(2, f_horarios);
+
         }
     }
 }

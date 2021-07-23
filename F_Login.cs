@@ -50,7 +50,7 @@ namespace Ale_Academia
                 return;
             }
             string sql = "SELECT * FROM tb_usuarios WHERE T_USERNAME = '" + username + "'AND T_SENHAUSUARIO = '" + senha + "'";
-            dt = Banco.consulta(sql);
+            dt = Banco.dql(sql);
 
             if (dt.Rows.Count == 1)
             {

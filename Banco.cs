@@ -41,7 +41,7 @@ namespace Ale_Academia
             }
         }
 
-        public static DataTable consulta (string sql)
+        public static DataTable dql (string sql) // data query language
         {
             SQLiteDataAdapter da = null;
             DataTable dt = new DataTable();
@@ -57,6 +57,33 @@ namespace Ale_Academia
             }
             catch (Exception ex)
             {
+                throw ex;
+            }
+        }
+        public static void dml (string q, string msgOk = null, string msgErro = null)//Data manipulation Language
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = conexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = q;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+                if(msgOk != null)
+                {
+                    MessageBox.Show(msgOk);
+                }
+            }
+            catch (Exception ex)
+            {
+                if(msgErro != null)
+                {
+                    MessageBox.Show(msgErro + "\n" + ex.Message);
+                }
                 throw ex;
             }
         }
